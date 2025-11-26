@@ -64,22 +64,38 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
 
   return (
     <div className="text-white text-center">
-      <div className="flex justify-center space-x-4 md:space-x-8 text-6xl md:text-8xl lg:text-9xl font-orbitron">
-        <div>
-          <span className="block">{formatTime(timeLeft.days)}</span>
-          <span className="text-lg md:text-xl font-lora mt-2">DÍAS</span>
+      <div className="flex justify-center space-x-4 md:space-x-8 font-cinzel-decorative">
+        {/* Días */}
+        <div className="relative flex flex-col items-center group p-4 rounded-lg transition-all duration-300 ease-in-out">
+          <div className="absolute inset-0 rounded-lg border border-transparent group-hover:border-white/20 group-hover:bg-white/10 transition-all duration-300 ease-in-out"></div>
+          <div className="relative z-10 text-center">
+            <span className="block text-6xl md:text-8xl lg:text-9xl">{formatTime(timeLeft.days)}</span>
+            <span className="text-lg md:text-xl font-lora mt-2">DÍAS</span>
+          </div>
         </div>
-        <div>
-          <span className="block">{formatTime(timeLeft.hours)}</span>
-          <span className="text-lg md:text-xl font-lora mt-2">HORAS</span>
+        {/* Horas */}
+        <div className="relative flex flex-col items-center group p-4 rounded-lg transition-all duration-300 ease-in-out">
+          <div className="absolute inset-0 rounded-lg border border-transparent group-hover:border-white/20 group-hover:bg-white/10 transition-all duration-300 ease-in-out"></div>
+          <div className="relative z-10 text-center">
+            <span className="block text-6xl md:text-8xl lg:text-9xl">{formatTime(timeLeft.hours)}</span>
+            <span className="text-lg md:text-xl font-lora mt-2">HORAS</span>
+          </div>
         </div>
-        <div>
-          <span className="block">{formatTime(timeLeft.minutes)}</span>
-          <span className="text-lg md:text-xl font-lora mt-2">MINUTOS</span>
+        {/* Minutos */}
+        <div className="relative flex flex-col items-center group p-4 rounded-lg transition-all duration-300 ease-in-out">
+          <div className="absolute inset-0 rounded-lg border border-transparent group-hover:border-white/20 group-hover:bg-white/10 transition-all duration-300 ease-in-out"></div>
+          <div className="relative z-10 text-center">
+            <span className="block text-6xl md:text-8xl lg:text-9xl">{formatTime(timeLeft.minutes)}</span>
+            <span className="text-lg md:text-xl font-lora mt-2">MINUTOS</span>
+          </div>
         </div>
-        <div>
-          <span className="block">{formatTime(timeLeft.seconds)}</span>
-          <span className="text-lg md:text-xl font-lora mt-2">SEGUNDOS</span>
+        {/* Segundos */}
+        <div className="relative flex flex-col items-center group p-4 rounded-lg transition-all duration-300 ease-in-out">
+          <div className="absolute inset-0 rounded-lg border border-transparent group-hover:border-white/20 group-hover:bg-white/10 transition-all duration-300 ease-in-out"></div>
+          <div className="relative z-10 text-center">
+            <span className="block text-6xl md:text-8xl lg:text-9xl">{formatTime(timeLeft.seconds)}</span>
+            <span className="text-lg md:text-xl font-lora mt-2">SEGUNDOS</span>
+          </div>
         </div>
       </div>
     </div>
