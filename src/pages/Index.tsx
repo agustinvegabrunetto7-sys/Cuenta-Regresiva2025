@@ -17,11 +17,11 @@ const Index = () => {
 
       <div className="relative z-10 flex-grow flex flex-col items-center justify-center p-4">
         <h2 className="text-white text-3xl md:text-5xl font-cinzel-decorative mb-8 animate-fade-in">
-          PREPÁRATE PARA EL EVENTO
+          PREPÁRATE...
         </h2>
         <CountdownTimer targetDate={targetDate} />
         <p className="text-white text-xl md:text-3xl mt-8 font-lora animate-celeste-wave">
-          ¡La cuenta regresiva ha comenzado!
+          Estate atento.
         </p>
       </div>
       <MadeWithDyad />
