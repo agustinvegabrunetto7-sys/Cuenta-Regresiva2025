@@ -64,22 +64,22 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
 
   return (
     <div className="text-white text-center">
-      <div className="flex justify-center space-x-4 md:space-x-8 text-6xl md:text-8xl lg:text-9xl font-blatismo-sans">
+      <div className="flex justify-center space-x-4 md:space-x-8 text-6xl md:text-8xl lg:text-9xl font-orbitron">
         <div>
           <span className="block">{formatTime(timeLeft.days)}</span>
-          <span className="text-lg md:text-xl font-sans-text mt-2">DÍAS</span>
+          <span className="text-lg md:text-xl font-lora mt-2">DÍAS</span>
         </div>
         <div>
           <span className="block">{formatTime(timeLeft.hours)}</span>
-          <span className="text-lg md:text-xl font-sans-text mt-2">HORAS</span>
+          <span className="text-lg md:text-xl font-lora mt-2">HORAS</span>
         </div>
         <div>
           <span className="block">{formatTime(timeLeft.minutes)}</span>
-          <span className="text-lg md:text-xl font-sans-text mt-2">MINUTOS</span>
+          <span className="text-lg md:text-xl font-lora mt-2">MINUTOS</span>
         </div>
         <div>
           <span className="block">{formatTime(timeLeft.seconds)}</span>
-          <span className="text-lg md:text-xl font-sans-text mt-2">SEGUNDOS</span>
+          <span className="text-lg md:text-xl font-lora mt-2">SEGUNDOS</span>
         </div>
       </div>
     </div>
