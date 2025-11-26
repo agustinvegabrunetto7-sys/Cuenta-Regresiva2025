@@ -1,6 +1,6 @@
 "use client";
 
-import { MadeWithDyad } = "@/components/made-with-dyad";
+import { MadeWithDyad } from "@/components/made-with-dyad";
 import CountdownTimer from "@/components/CountdownTimer";
 
 const Index = () => {
